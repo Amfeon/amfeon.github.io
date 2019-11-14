@@ -114,10 +114,6 @@ body, html {
       top: 28px;
       transform: rotate(-60deg); }
 
-@media (max-width: 1130px) {
-  .card {
-    margin: 20px; } }
-
 @media (max-width: 769px) {
   .card-list {
     flex-direction: column;
