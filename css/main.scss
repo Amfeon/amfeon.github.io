@@ -148,11 +148,7 @@ body, html {
   }
 
 }
-@media (max-width: $bp-desc) {
-  .card{
-    margin: 20px;
-  }
-}
+
 
 @media (max-width: $bp-modile) {
   .card-list{
