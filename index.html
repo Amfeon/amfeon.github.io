@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Latest Developments</title>
+    <meta name="description" content="Our Latest Developments">
 <link href="./css/style.css" rel="stylesheet"></head>
-<body class="body">
-    webpack
-    <a href="map.html" target="_blank" rel="noopener noreferrer">amap</a>
-    <img src="images/error.png" alt="zxc">
+<body >
+    <div class="container">
+        <div class="page">
+            <h1 class="page__title">Our Latest Developments</h1>
+            <form action="#search" id="filter-form" class="filter-form">
+                <label class="filter-form__label" for="filter">Filter</label>
+                <input class="filter-form__input" type="text" name="filter" id="filter">
+            </form>
+            <div class="card-list" id="card-list"></div>
+        </div>
+    </div>
 <script type="text/javascript" src="main.js"></script></body>
 </html>
