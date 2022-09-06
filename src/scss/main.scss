@@ -16,6 +16,21 @@ html{
   gap: 22px;
   justify-content: center;
 }
+.action{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 ;
+}
+.button{
+  padding: 12px 23px;
+  border: 1px solid #D8D8D8;
+  border-radius: 25px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
 
 @media screen AND (max-width: 400px) {
   .card-list{
