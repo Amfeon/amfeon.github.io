@@ -14,7 +14,9 @@ html{
   display: grid;
   grid-template-columns: repeat(auto-fill, 380px);
   gap: 22px;
-  justify-content: center;
+  @media screen AND (max-width: 1214px) {
+    justify-content: center;
+  }
 }
 .action{
   display: flex;
