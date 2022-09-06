@@ -9,7 +9,7 @@ const CopyPlugin = require('copy-webpack-plugin');
  module.exports = {
     entry: {main:'./src/index.js'},
     output: {
-        path: path.resolve(__dirname,'./dist'),
+        path: path.resolve(__dirname,'.'),
         filename:'[name].js'
       },
       devServer: {
@@ -20,7 +20,7 @@ const CopyPlugin = require('copy-webpack-plugin');
                 {
                     test: /\.js$/,
                     exclude: /node_modules/,
-                    use:["babel-loader"]                      
+                    use:["babel-loader"]
                 },
                 {
                   test: /\.css$/,
@@ -71,10 +71,10 @@ const CopyPlugin = require('copy-webpack-plugin');
                         //   //   console.log('Images******************');
                         //   //   return `images/${url}`;
                         //   // }
-              
+
                         //   // if (/scss\\img/.test(resourcePath)) {
                         //   //   return `css/img/${url}`;
-                        //   // }                        
+                        //   // }
                         //   return `./css/img/${url}`;
                         // },
                     }
@@ -90,13 +90,9 @@ const CopyPlugin = require('copy-webpack-plugin');
             filename: 'index.html',
             template: './src/html/index.html' // если несколько точек, создать новый объект со свойствами
         }),
-        new HtmlWebpackPlugin({
-          filename: 'map.html',
-          template: './src/html/map.html' // если несколько точек, создать новый объект со свойствами
-      }),
-      new CopyPlugin([
-        { from: `${PATHS.src}/images`, to: `${PATHS.dist}/images` },
-      ]),
+      // new CopyPlugin([
+      //   { from: `${PATHS.src}/images`, to: `${PATHS.dist}/images` },
+      // ]),
     ]
 
   };

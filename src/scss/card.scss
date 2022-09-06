@@ -1,0 +1,67 @@
+.card{
+  max-width: 380px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 1px solid #D8D8D8;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #363636;
+  background: #F8F8F8;
+  transition: .3s  ;
+  &:hover{
+    background: #c8c7c7;
+    border: 1px solid #908f8f;
+    transition: .3s;
+  }
+}
+
+.card__header{
+  position: relative;
+  width: 100%;
+  height: 233px;
+}
+.card__label{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 8px 8px 5px 8px ;
+}
+.card__label_IndependentLiving{
+  background: #006F79;
+}
+.card__label_SupportAvailable{
+  background: #b94f05;
+}
+.card__body{
+  padding: 15px;
+}
+.card__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+.card__address{
+
+}
+.card__text{
+  padding-top: 15px;
+}
+.card__subtext{
+  font-size: 14px;
+  line-height: 19px;
+}

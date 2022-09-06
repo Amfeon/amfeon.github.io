@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.card-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 380px);
+  gap: 22px;
+  justify-content: center;
+}
+
+@media screen AND (max-width: 400px) {
+  .card-list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@import "card";
+@import "page";
+@import "filter";
